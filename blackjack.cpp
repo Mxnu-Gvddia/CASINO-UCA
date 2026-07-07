@@ -156,7 +156,6 @@ int main()
 
     int totalJugador = calcularValorMano(jugador, nJugador);
 
-    // ---------- Turno del dealer (solo si el jugador no se paso) ----------
     if (totalJugador <= 21)
     {
       cout << "Turno del dealer...\n";
@@ -178,12 +177,12 @@ int main()
     if (totalJugador > 21)
     {
       cout << "Te pasaste de 21. PERDISTE la ronda.\n";
-      puntos -= apuesta; // Restar puntos
+      puntos -= apuesta;
     }
     else if (totalDealer > 21 || totalJugador > totalDealer)
     {
       cout << "GANASTE la ronda!\n";
-      puntos += apuesta; // Sumar puntos
+      puntos += apuesta; 
     }
     else if (totalJugador == totalDealer)
     {
@@ -192,7 +191,7 @@ int main()
     else
     {
       cout << "PERDISTE la ronda.\n";
-      puntos -= apuesta; // Restar puntos
+      puntos -= apuesta;
     }
 
     cout << "\nFichas actuales: " << puntos << "\n";
