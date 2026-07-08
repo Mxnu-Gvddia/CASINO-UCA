@@ -1,8 +1,7 @@
-// Blackjack: Parte de Manuel Gavidia 00099026
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include "casino.h"
 using namespace std;
 
 const int MAX_CARTAS = 12;
@@ -79,11 +78,10 @@ void mostrarMano(int cartas[], int cantidad)
   }
 }
 
-int main()
+// Antes era int main(). Ahora recibe el saldo del casino por referencia.
+void jugarBlackjack(float& saldo)
 {
-  srand((unsigned int)time(0));
-
-  int puntos = 100;
+  int puntos = (int)saldo;
   char continuarJugando;
 
   cout << "=================================================\n";
@@ -214,5 +212,5 @@ int main()
   cout << "|  Gracias por jugar. Hasta luego!   | \n";
   cout << "======================================\n";
 
-  return 0;
+  saldo = puntos; // guardo el dinero de vuelta al casino
 }
