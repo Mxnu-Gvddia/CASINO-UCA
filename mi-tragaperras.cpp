@@ -1,21 +1,18 @@
 #include <iostream>
 #include <cstdlib>
-#include <ctime>
 #include <string>
+#include "casino.h"
 using namespace std;
 
-int main()
+// Antes era int main(). Ahora recibe el saldo del casino por referencia.
+void jugarTragamonedas(float& saldo)
 {
-
-    srand(time(0));
-
     // simbolos y sus nombres
     string simbolos[7] = {"C", "L", "N", "B", "E", "D", "7"};
     string nombres[7] = {"Cereza", "Limon", "Naranja", "Campana", "Estrella", "Diamante", "Siete"};
 
     int rodillos[4];
 
-    float saldo = 600;
     int apuesta = 10;
     int premio = 0;
     int multi = 0;
@@ -178,6 +175,4 @@ int main()
     }
     cout << "Creditos finales: " << saldo << endl;
     cout << "============================" << endl;
-
-    return 0;
 }
