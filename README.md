@@ -6,11 +6,16 @@ Proyecto en C++ desarrollado para la asignatura de Fundamentos de la programaci�
 
 ## Integrantes del equipo
 
-| Nombre completo                | Carné    |
-| Raúl Ernesto Trejo Pérez       | 00304226 |
-| Ozzlen Aarón Landaverde Gálvez | 00047426 |
-| Alejandro David Mena Padilla   | 00095526 |
-| Manuel De Jesús Gavidia Vaquiz | 00099026 |
+| Nombre completo   +   Carné  |
+
+
+| Raúl Trejo        | 00304226 |
+
+| Ozzlen Landaverde | 00047426 |
+
+| Alejandro Mena    | 00095526 |
+
+| Manuel Gavidia    | 00099026 |
 
 ## Información del proyecto
 << Grupo 35, Aula 3. L7 >>
